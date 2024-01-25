@@ -6,7 +6,14 @@ var menuLinks = [
     { text: 'orders', href: '/orders' },
     { text: 'account', href: '/account' },
   ];
-  
+
+//Create Nav
+for (link in menuLinks){
+   let newLink = topMenuEl.appendChild(document.createElement("a"))
+   newLink.href = link.href
+   newLink.innerText = link.text
+}
+
 let mainEl = document.getElementsByTagName("main")
 mainEl.style.backgroundColor = "var(--sub-menu-bg)"
 mainEl.appendChild(document.createElement("h1").textContent="DOM Manipulation")
