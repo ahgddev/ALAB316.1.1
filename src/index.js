@@ -16,7 +16,7 @@ for (link in menuLinks){
 
 let mainEl = document.getElementsByTagName("main")
 mainEl.style.backgroundColor = "var(--sub-menu-bg)"
-mainEl.appendChild(document.createElement("h1").textContent="DOM Manipulation")
+mainEl.appendChild(document.createElement("h1").innerHTML="DOM Manipulation")
 mainEl.classList.add("flex-ctr");
 
 let topMenuEl = document.getElementById("top-menu")
